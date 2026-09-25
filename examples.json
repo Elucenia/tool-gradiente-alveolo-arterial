@@ -1,0 +1,96 @@
+[
+  {
+    "label": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+    "input": {
+      "fio2": 21,
+      "pao2": 90,
+      "paco2": 40,
+      "idade": 40
+    },
+    "expected": {
+      "raw": {
+        "pAO2": 99.73,
+        "grad": 9.73,
+        "esperado": 10.9
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "fio2": 21,
+      "pao2": 90,
+      "paco2": 40,
+      "idade": 40
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+    "input": {
+      "fio2": 21,
+      "pao2": 60,
+      "paco2": 30,
+      "idade": 60
+    },
+    "expected": {
+      "raw": {
+        "grad": 52.23
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "fio2": 21,
+      "pao2": 60,
+      "paco2": 30,
+      "idade": 60
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+    "input": {
+      "fio2": 21,
+      "pao2": 55,
+      "paco2": 70,
+      "idade": 50
+    },
+    "expected": {
+      "raw": {
+        "pAO2": 62.23,
+        "grad": 7.23
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "fio2": 21,
+      "pao2": 55,
+      "paco2": 70,
+      "idade": 50
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+    "input": {
+      "fio2": 21,
+      "pao2": 85,
+      "paco2": 35,
+      "idade": 30,
+      "patm": 690
+    },
+    "expected": {
+      "raw": {
+        "pAO2": 91.28,
+        "grad": 6.28
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "fio2": 21,
+      "pao2": 85,
+      "paco2": 35,
+      "idade": 30,
+      "patm": 690
+    },
+    "expandedZeroOptions": []
+  }
+]

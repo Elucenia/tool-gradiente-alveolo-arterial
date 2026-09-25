@@ -1,0 +1,211 @@
+{
+  "tool": {
+    "id": "gradiente-alveolo-arterial",
+    "title": "Gradiente alvéolo-arterial de O₂",
+    "short": "Causa da hipoxemia: pulmão ou hipoventilação",
+    "desc": "Calcule o gradiente alvéolo-arterial de oxigênio pela equação do gás alveolar e compare com o valor esperado para a idade, com ajuste para altitude.",
+    "lead": "Diferencia a hipoxemia por hipoventilação ou baixa pressão inspirada (gradiente normal) da causada por distúrbio V/Q, shunt ou difusão (gradiente aumentado).",
+    "spec": [
+      "medicina-intensiva",
+      "medicina-de-emergencia",
+      "pneumologia",
+      "clinica-medica"
+    ],
+    "fields": [
+      [
+        "fio2",
+        "FiO₂",
+        "num",
+        {
+          "min": 21,
+          "max": 100,
+          "unit": "%",
+          "ph": "21"
+        }
+      ],
+      [
+        "pao2",
+        "PaO₂",
+        "num",
+        {
+          "min": 20,
+          "max": 700,
+          "unit": "mmHg",
+          "ph": "80"
+        }
+      ],
+      [
+        "paco2",
+        "PaCO₂",
+        "num",
+        {
+          "min": 10,
+          "max": 150,
+          "unit": "mmHg",
+          "ph": "40"
+        }
+      ],
+      [
+        "idade",
+        "Idade",
+        "num",
+        {
+          "min": 1,
+          "max": 110,
+          "unit": "anos",
+          "ph": "50"
+        }
+      ],
+      [
+        "patm",
+        "Pressão barométrica local (padrão 760)",
+        "num",
+        {
+          "min": 400,
+          "max": 800,
+          "unit": "mmHg",
+          "ph": "760",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>PAO₂</strong> = FiO₂ × (P<sub>atm</sub> − 47) − PaCO₂ ÷ 0,8 (quociente respiratório de 0,8; 47 mmHg = pressão de vapor d'água a 37 °C).</p><p><strong>Gradiente A-a</strong> = PAO₂ − PaO₂.</p><p><strong>Esperado em ar ambiente</strong> = 2,5 + 0,21 × idade (Mellemgaard). Regra prática: idade ÷ 4 + 4.</p>",
+    "table": [
+      [
+        "Idade",
+        "Gradiente A-a esperado (ar ambiente)"
+      ],
+      [
+        "20 anos",
+        "até ~7 mmHg"
+      ],
+      [
+        "40 anos",
+        "até ~11 mmHg"
+      ],
+      [
+        "60 anos",
+        "até ~15 mmHg"
+      ],
+      [
+        "80 anos",
+        "até ~19 mmHg"
+      ]
+    ],
+    "tips": [
+      "Hipoxemia com gradiente normal = hipoventilação (PaCO₂ alta) ou baixa pressão inspirada de O₂ (altitude). Gradiente aumentado = distúrbio V/Q, shunt ou difusão.",
+      "Os valores de referência valem para ar ambiente: com FiO₂ alta, o gradiente aumenta mesmo em pulmões normais; nesse caso prefira a relação PaO₂/FiO₂.",
+      "Em cidades altas, informe a pressão barométrica local (ex.: cerca de 690 mmHg a 900 m de altitude); usar 760 superestima a PAO₂ e o gradiente.",
+      "Colha a gasometria em ar ambiente, quando for seguro, para interpretar o gradiente com precisão."
+    ],
+    "sources": [
+      [
+        "Mellemgaard K. The alveolar-arterial oxygen difference: its size and components in normal man. Acta Physiol Scand, 1966.",
+        "https://doi.org/10.1111/j.1748-1716.1966.tb03281.x"
+      ],
+      [
+        "Hantzidiamantis PJ, Amaro E. Physiology, Alveolar to Arterial Oxygen Gradient. StatPearls (NCBI Bookshelf).",
+        "https://www.ncbi.nlm.nih.gov/books/NBK545153/"
+      ]
+    ],
+    "cases": [
+      [
+        "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        {
+          "fio2": 21,
+          "pao2": 90,
+          "paco2": 40,
+          "idade": 40
+        },
+        {
+          "raw": {
+            "pAO2": 99.73,
+            "grad": 9.73,
+            "esperado": 10.9
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        {
+          "fio2": 21,
+          "pao2": 60,
+          "paco2": 30,
+          "idade": 60
+        },
+        {
+          "raw": {
+            "grad": 52.23
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        {
+          "fio2": 21,
+          "pao2": 55,
+          "paco2": 70,
+          "idade": 50
+        },
+        {
+          "raw": {
+            "pAO2": 62.23,
+            "grad": 7.23
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        {
+          "fio2": 21,
+          "pao2": 85,
+          "paco2": 35,
+          "idade": 30,
+          "patm": 690
+        },
+        {
+          "raw": {
+            "pAO2": 91.28,
+            "grad": 6.28
+          },
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

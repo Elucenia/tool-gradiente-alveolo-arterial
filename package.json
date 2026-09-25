@@ -1,0 +1,19 @@
+{
+  "name": "@elucenia/tool-gradiente-alveolo-arterial",
+  "version": "0.1.0",
+  "description": "Gradiente alvéolo-arterial de O₂",
+  "main": "calculator.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elucenia/tool-gradiente-alveolo-arterial.git"
+  }
+}
