@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-gradiente-alveolo-arterial · Elucenia · https://github.com/Elucenia/tool-gradiente-alveolo-arterial
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"gradiente-alveolo-arterial","title":"Gradiente alvéolo-arterial de O₂","fields":[["fio2","FiO₂","num",{"min":21,"max":100,"unit":"%","ph":"21"}],["pao2","PaO₂","num",{"min":20,"max":700,"unit":"mmHg","ph":"80"}],["paco2","PaCO₂","num",{"min":10,"max":150,"unit":"mmHg","ph":"40"}],["idade","Idade","num",{"min":1,"max":110,"unit":"anos","ph":"50"}],["patm","Pressão barométrica local (padrão 760)","num",{"min":400,"max":800,"unit":"mmHg","ph":"760","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
