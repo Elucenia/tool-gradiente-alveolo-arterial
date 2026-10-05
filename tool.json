@@ -5,6 +5,7 @@
     "short": "Causa da hipoxemia: pulmão ou hipoventilação",
     "desc": "Calcule o gradiente alvéolo-arterial de oxigênio pela equação do gás alveolar e compare com o valor esperado para a idade, com ajuste para altitude.",
     "lead": "Diferencia a hipoxemia por hipoventilação ou baixa pressão inspirada (gradiente normal) da causada por distúrbio V/Q, shunt ou difusão (gradiente aumentado).",
+    "kind": "Calculadora",
     "spec": [
       "medicina-intensiva",
       "medicina-de-emergencia",
@@ -70,34 +71,6 @@
       ]
     ],
     "formula": "<p><strong>PAO₂</strong> = FiO₂ × (P<sub>atm</sub> − 47) − PaCO₂ ÷ 0,8 (quociente respiratório de 0,8; 47 mmHg = pressão de vapor d'água a 37 °C).</p><p><strong>Gradiente A-a</strong> = PAO₂ − PaO₂.</p><p><strong>Esperado em ar ambiente</strong> = 2,5 + 0,21 × idade (Mellemgaard). Regra prática: idade ÷ 4 + 4.</p>",
-    "table": [
-      [
-        "Idade",
-        "Gradiente A-a esperado (ar ambiente)"
-      ],
-      [
-        "20 anos",
-        "até ~7 mmHg"
-      ],
-      [
-        "40 anos",
-        "até ~11 mmHg"
-      ],
-      [
-        "60 anos",
-        "até ~15 mmHg"
-      ],
-      [
-        "80 anos",
-        "até ~19 mmHg"
-      ]
-    ],
-    "tips": [
-      "Hipoxemia com gradiente normal = hipoventilação (PaCO₂ alta) ou baixa pressão inspirada de O₂ (altitude). Gradiente aumentado = distúrbio V/Q, shunt ou difusão.",
-      "Os valores de referência valem para ar ambiente: com FiO₂ alta, o gradiente aumenta mesmo em pulmões normais; nesse caso prefira a relação PaO₂/FiO₂.",
-      "Em cidades altas, informe a pressão barométrica local (ex.: cerca de 690 mmHg a 900 m de altitude); usar 760 superestima a PAO₂ e o gradiente.",
-      "Colha a gasometria em ar ambiente, quando for seguro, para interpretar o gradiente com precisão."
-    ],
     "sources": [
       [
         "Mellemgaard K. The alveolar-arterial oxygen difference: its size and components in normal man. Acta Physiol Scand, 1966.",
@@ -106,6 +79,14 @@
       [
         "Hantzidiamantis PJ, Amaro E. Physiology, Alveolar to Arterial Oxygen Gradient. StatPearls (NCBI Bookshelf).",
         "https://www.ncbi.nlm.nih.gov/books/NBK545153/"
+      ],
+      [
+        "Berend2014,NEJM,updated2014-10-16,primary article mirror",
+        "https://www.docenti.unina.it/webdocenti-be/allegati/materiale-didattico/443118"
+      ],
+      [
+        "Mellemgaard1966",
+        "https://onlinelibrary.wiley.com/doi/10.1111/j.1748-1716.1966.tb03281.x"
       ]
     ],
     "cases": [
@@ -175,9 +156,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -186,17 +164,205 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:19:19.748Z",
+      "total": 500,
+      "passed": 500,
+      "evidencePath": "reports/review-20261003/four-physiological-equation-source-oracles-final23-v2.json",
+      "evidenceSha256": "519318646a8992c38bc190eab888a1a985682928e8dd2f833d6566be5e490b68",
+      "peerEvidencePath": "reports/review-20261003/independent-four-physiological-equation-source-oracles-final23-v2.json",
+      "peerEvidenceSha256": "59b71a2c62afcb302b5af74ea6bcd987dc816ed6b204fba5ecf377dd776f9fc2",
+      "scope": "Only explicitly listed physical/linear equation outputs. Other equations,protocols,thresholds,clinical interpretation,population suitability,professional translations and source rights are not approved.",
+      "source": {
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK493219/?report=reader",
+        "edition": "NCBIBookshelf,Partial Pressure of Oxygen,author chapter:simplified alveolar gas equation",
+        "locator": "Final alveolar gas equation,water47mmHg,RQ0.8 andPatm",
+        "access": "Official author chapter indexed section read2026-10-04; directBook request returned browser-check. Equation PAO2=FiO2(Patm-47)-PaCO2/0.8,then PAO2-PaO2,not full gas-exchange physiology.",
+        "limitations": "Only defined simplified physical-equation arithmetic with47mmHg andfixedRQ0.8;not exactgeneralalveolargas equation,individualRQ,age-normal limits,Mellemgaard1966 equation,hypoxemia causes,high-FiO2approximation validity orclinicalinterpretation."
+      },
+      "implementations": [
+        {
+          "app": "website",
+          "id": "gradiente-alveolo-arterial",
+          "sha256": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94"
+        },
+        {
+          "app": "dashboard",
+          "id": "gradiente-alveolo-arterial",
+          "sha256": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94"
+        },
+        {
+          "app": "command-center",
+          "id": "gradiente-alveolo-arterial",
+          "sha256": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94"
+        }
+      ],
+      "qualifications": [
+        "Only defined simplified physical-equation arithmetic with47mmHg andfixedRQ0.8;not exactgeneralalveolargas equation,individualRQ,age-normal limits,Mellemgaard1966 equation,hypoxemia causes,high-FiO2approximation validity orclinicalinterpretation.",
+        "Twelve failures of the initial synthetic floating-point criterion are preserved in four-physiological-equation-source-oracles-final23.json. V2 preserves every expected value and uses 16*EPS times the sum of absolute source terms for this subtraction-heavy equation. This applies only to the new synthetic comparisons. No original source fixture or original tolerance is changed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Equaçãoalveolar RQ 0,8/vapor 47 mm Hg; gradiente Mellemgaard 1966 2,5+0,21 idade; aproximaçãoidade/4+4",
+    "implementationVersion": "gradiente-alveolo-arterial@native-2026-10-03+d85cee034314",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/5963295/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "PAO₂ = FiO₂ × (P atm − 47) − PaCO₂ ÷ 0,8 (quociente respiratório de 0,8; 47 mmHg = pressão de vapor d'água a 37 °C). Gradiente A-a = PAO₂ − PaO₂. Esperado em ar ambiente = 2,5 + 0,21 × idade (Mellemgaard). Regra prática: idade ÷ 4 + 4.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "fio2",
+            "label": "FiO₂",
+            "type": "num",
+            "min": 21,
+            "max": 100,
+            "unit": "%",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pao2",
+            "label": "PaO₂",
+            "type": "num",
+            "min": 20,
+            "max": 700,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "paco2",
+            "label": "PaCO₂",
+            "type": "num",
+            "min": 10,
+            "max": 150,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "num",
+            "min": 1,
+            "max": 110,
+            "unit": "anos",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "patm",
+            "label": "Pressão barométrica local (padrão 760)",
+            "type": "num",
+            "min": 400,
+            "max": 800,
+            "unit": "mmHg",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "be1e10616563e65f96952bd467a05b787e2cae1ed0ba76aa19d770ba91ee90de"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Mellemgaard K. The alveolar-arterial oxygen difference: its size and components in normal man. Acta Physiol Scand, 1966.",
+          "url": "https://doi.org/10.1111/j.1748-1716.1966.tb03281.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The alveolar-arterial oxygen difference: its size and components in normal man.",
+            "year": "1966",
+            "firstPublicationDate": "1966-05-01",
+            "doi": "10.1111/j.1748-1716.1966.tb03281.x",
+            "pmid": "5963295",
+            "journal": "Acta physiologica Scandinavica",
+            "authors": "Mellemgaard K."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/5963295/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Hantzidiamantis PJ, Amaro E. Physiology, Alveolar to Arterial Oxygen Gradient. StatPearls (NCBI Bookshelf).",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545153/",
+          "class": "source-access-inconclusive",
+          "publicationEditionConfirmed": false,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "reason": "Institutional or legislative URL requires individual browser review; not a publication DOI."
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:19:19.748Z",
+        "total": 500,
+        "passed": 500,
+        "evidencePath": "reports/review-20261003/four-physiological-equation-source-oracles-final23-v2.json",
+        "scope": "Only explicitly listed physical/linear equation outputs. Other equations,protocols,thresholds,clinical interpretation,population suitability,professional translations and source rights are not approved.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "0b903ca63e7482b09fca13d3573f465b54a4d58a44dc49c0fc098882f5893456"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94"
+    },
+    "limits": "O cálculo usa pressão de vapor d’água de 47 mmHg a 37 °C e quociente respiratório fixo de 0,8; este é um pressuposto de estado estável e pode variar com a dieta. Informe FiO₂ em porcentagem, pressões em mmHg e pressão barométrica apropriada. A referência aproximada por idade não deve ser extrapolada automaticamente para FiO₂ elevada ou altitude. O gradiente ajuda a avaliar oxigenação, mas não determina sozinho a causa da hipoxemia. Os coeficientes da referência local por idade ainda exigem conferência no estudo completo citado.",
+    "limitsEvidence": {
+      "status": "direct-primary-equation-sections-and-original-abstract-read",
+      "sources": [
+        {
+          "url": "https://www.docenti.unina.it/webdocenti-be/allegati/materiale-didattico/443118",
+          "edition": "Berend2014,NEJM,updated2014-10-16,primary article mirror",
+          "readScope": "Original article PDF text actually read: physiological-equation/Table1 sections pp1434–1437 and respiratory component/Table3 footnotes p1442; not whole paper. Host is a university mirror, not journal publisher."
+        },
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1748-1716.1966.tb03281.x",
+          "edition": "Mellemgaard1966",
+          "readScope": "Direct original abstract fully read:80 normal subjects at rest and age-related gradient. Full study and coefficients not read."
+        }
+      ],
+      "populationScope": "Alveolar gas equation assumptions and contextual oxygenation assessment.",
+      "remainingChecks": [
+        "Mellemgaard1966 full coefficient derivation not read.",
+        "No clinical validation at highFiO2, alteredRQ or altitude.",
+        "Primary Berend paper read through university mirror, not full article."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/gradiente-alveolo-arterial/calculator.js",
+    "bytes": 5351,
+    "sha256": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "cca973e9aafd8bb0cbc2873c2854d28f1d8ac52a8166897f435cb2fca67ea8dc",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 500,
+      "sha256": "98b6d008c111fa25132c4cdb5db6f09c5e5d519a743b22dba5ec48526eb04113",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
