@@ -1,0 +1,956 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "gradiente-alveolo-arterial",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/gradiente-alveolo-arterial/calculator.js",
+    "sha256": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94",
+    "bytes": 5351
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "gradiente-alveolo-arterial",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+      "originalInput": {
+        "fio2": 21,
+        "pao2": 90,
+        "paco2": 40,
+        "idade": 40
+      },
+      "input": {
+        "fio2": 21,
+        "pao2": 90,
+        "paco2": 40,
+        "idade": 40
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pAO2": 99.73,
+          "grad": 9.73,
+          "esperado": 10.9
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "10",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "raw": {
+          "pAO2": 99.72999999999999,
+          "grad": 9.72999999999999,
+          "esperado": 10.9
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fio2": 21,
+            "pao2": 90,
+            "paco2": 40,
+            "idade": 40
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+          "startedAt": "2026-10-05T17:38:17.439Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gradiente-alveolo-arterial",
+              "main": [
+                "10",
+                "mmHg"
+              ],
+              "label": "Gradiente alvéolo-arterial de O₂",
+              "raw": {
+                "pAO2": 99.72999999999999,
+                "grad": 9.72999999999999,
+                "esperado": 10.9
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "31c9e63cce8eaff2391f6a6fcd9fbc327b41d06ccdc469702dc32f5f71c1f27a",
+          "bytes": 223,
+          "elapsedMs": 4.245500000019092
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+        "startedAt": "2026-10-05T17:38:17.439Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gradiente-alveolo-arterial",
+            "main": [
+              "10",
+              "mmHg"
+            ],
+            "label": "Gradiente alvéolo-arterial de O₂",
+            "raw": {
+              "pAO2": 99.72999999999999,
+              "grad": 9.72999999999999,
+              "esperado": 10.9
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "31c9e63cce8eaff2391f6a6fcd9fbc327b41d06ccdc469702dc32f5f71c1f27a",
+        "bytes": 223,
+        "elapsedMs": 4.245500000019092
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pAO2",
+            "expected": 99.73,
+            "obtained": 99.72999999999999,
+            "tolerance": 0.00500001,
+            "difference": 1.4210854715202004e-14,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grad",
+            "expected": 9.73,
+            "obtained": 9.72999999999999,
+            "tolerance": 0.00500001,
+            "difference": 1.0658141036401503e-14,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.esperado",
+            "expected": 10.9,
+            "obtained": 10.9,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pAO2",
+            "expected": 99.72999999999999,
+            "obtained": 99.72999999999999,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grad",
+            "expected": 9.72999999999999,
+            "obtained": 9.72999999999999,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.esperado",
+            "expected": 10.9,
+            "obtained": 10.9,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "10",
+            "obtained": "10",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mmHg",
+            "obtained": "mmHg",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gradiente-alveolo-arterial",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+      "originalInput": {
+        "fio2": 21,
+        "pao2": 60,
+        "paco2": 30,
+        "idade": 60
+      },
+      "input": {
+        "fio2": 21,
+        "pao2": 60,
+        "paco2": 30,
+        "idade": 60
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "grad": 52.23
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "52",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "raw": {
+          "pAO2": 112.22999999999999,
+          "grad": 52.22999999999999,
+          "esperado": 15.1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fio2": 21,
+            "pao2": 60,
+            "paco2": 30,
+            "idade": 60
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+          "startedAt": "2026-10-05T17:38:17.738Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gradiente-alveolo-arterial",
+              "main": [
+                "52",
+                "mmHg"
+              ],
+              "label": "Gradiente alvéolo-arterial de O₂",
+              "raw": {
+                "pAO2": 112.22999999999999,
+                "grad": 52.22999999999999,
+                "esperado": 15.1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e5020e82cbd0e21e674d2c428928a0a0dc6aba7aa865247f76ecd42f1c75bd7e",
+          "bytes": 225,
+          "elapsedMs": 5.719599999982165
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+        "startedAt": "2026-10-05T17:38:17.738Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gradiente-alveolo-arterial",
+            "main": [
+              "52",
+              "mmHg"
+            ],
+            "label": "Gradiente alvéolo-arterial de O₂",
+            "raw": {
+              "pAO2": 112.22999999999999,
+              "grad": 52.22999999999999,
+              "esperado": 15.1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e5020e82cbd0e21e674d2c428928a0a0dc6aba7aa865247f76ecd42f1c75bd7e",
+        "bytes": 225,
+        "elapsedMs": 5.719599999982165
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.grad",
+            "expected": 52.23,
+            "obtained": 52.22999999999999,
+            "tolerance": 0.00500001,
+            "difference": 7.105427357601002e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pAO2",
+            "expected": 112.22999999999999,
+            "obtained": 112.22999999999999,
+            "tolerance": 1.1222999999999998e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grad",
+            "expected": 52.22999999999999,
+            "obtained": 52.22999999999999,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.esperado",
+            "expected": 15.1,
+            "obtained": 15.1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "52",
+            "obtained": "52",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mmHg",
+            "obtained": "mmHg",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gradiente-alveolo-arterial",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+      "originalInput": {
+        "fio2": 21,
+        "pao2": 55,
+        "paco2": 70,
+        "idade": 50
+      },
+      "input": {
+        "fio2": 21,
+        "pao2": 55,
+        "paco2": 70,
+        "idade": 50
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pAO2": 62.23,
+          "grad": 7.23
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "7",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "raw": {
+          "pAO2": 62.22999999999999,
+          "grad": 7.22999999999999,
+          "esperado": 13
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fio2": 21,
+            "pao2": 55,
+            "paco2": 70,
+            "idade": 50
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+          "startedAt": "2026-10-05T17:38:18.051Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gradiente-alveolo-arterial",
+              "main": [
+                "7",
+                "mmHg"
+              ],
+              "label": "Gradiente alvéolo-arterial de O₂",
+              "raw": {
+                "pAO2": 62.22999999999999,
+                "grad": 7.22999999999999,
+                "esperado": 13
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "2d6d22ab5b37c1403f3fe4d22293358e9c1679760b82928663bdaae8c1cf873f",
+          "bytes": 220,
+          "elapsedMs": 5.204200000007404
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+        "startedAt": "2026-10-05T17:38:18.051Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gradiente-alveolo-arterial",
+            "main": [
+              "7",
+              "mmHg"
+            ],
+            "label": "Gradiente alvéolo-arterial de O₂",
+            "raw": {
+              "pAO2": 62.22999999999999,
+              "grad": 7.22999999999999,
+              "esperado": 13
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "2d6d22ab5b37c1403f3fe4d22293358e9c1679760b82928663bdaae8c1cf873f",
+        "bytes": 220,
+        "elapsedMs": 5.204200000007404
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pAO2",
+            "expected": 62.23,
+            "obtained": 62.22999999999999,
+            "tolerance": 0.00500001,
+            "difference": 7.105427357601002e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grad",
+            "expected": 7.23,
+            "obtained": 7.22999999999999,
+            "tolerance": 0.00500001,
+            "difference": 1.0658141036401503e-14,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pAO2",
+            "expected": 62.22999999999999,
+            "obtained": 62.22999999999999,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grad",
+            "expected": 7.22999999999999,
+            "obtained": 7.22999999999999,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.esperado",
+            "expected": 13,
+            "obtained": 13,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7",
+            "obtained": "7",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mmHg",
+            "obtained": "mmHg",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gradiente-alveolo-arterial",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+      "originalInput": {
+        "fio2": 21,
+        "pao2": 85,
+        "paco2": 35,
+        "idade": 30,
+        "patm": 690
+      },
+      "input": {
+        "fio2": 21,
+        "pao2": 85,
+        "paco2": 35,
+        "idade": 30,
+        "patm": 690
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pAO2": 91.28,
+          "grad": 6.28
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "6",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "raw": {
+          "pAO2": 91.28,
+          "grad": 6.280000000000001,
+          "esperado": 8.8
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fio2": 21,
+            "pao2": 85,
+            "paco2": 35,
+            "idade": 30,
+            "patm": 690
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+          "startedAt": "2026-10-05T17:38:18.364Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gradiente-alveolo-arterial",
+              "main": [
+                "6",
+                "mmHg"
+              ],
+              "label": "Gradiente alvéolo-arterial de O₂",
+              "raw": {
+                "pAO2": 91.28,
+                "grad": 6.280000000000001,
+                "esperado": 8.8
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "8418bfceaed03de880713fc1db3412a3cc74f551a94e1b3ae3598ba8ade4ba8b",
+          "bytes": 210,
+          "elapsedMs": 3.61009999999078
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gradiente-alveolo-arterial/calculate",
+        "startedAt": "2026-10-05T17:38:18.364Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gradiente-alveolo-arterial",
+            "main": [
+              "6",
+              "mmHg"
+            ],
+            "label": "Gradiente alvéolo-arterial de O₂",
+            "raw": {
+              "pAO2": 91.28,
+              "grad": 6.280000000000001,
+              "esperado": 8.8
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "8418bfceaed03de880713fc1db3412a3cc74f551a94e1b3ae3598ba8ade4ba8b",
+        "bytes": 210,
+        "elapsedMs": 3.61009999999078
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pAO2",
+            "expected": 91.28,
+            "obtained": 91.28,
+            "tolerance": 0.00500001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grad",
+            "expected": 6.28,
+            "obtained": 6.280000000000001,
+            "tolerance": 0.00500001,
+            "difference": 8.881784197001252e-16,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pAO2",
+            "expected": 91.28,
+            "obtained": 91.28,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grad",
+            "expected": 6.280000000000001,
+            "obtained": 6.280000000000001,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.esperado",
+            "expected": 8.8,
+            "obtained": 8.8,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "6",
+            "obtained": "6",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mmHg",
+            "obtained": "mmHg",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
