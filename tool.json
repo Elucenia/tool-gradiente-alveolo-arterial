@@ -208,7 +208,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Equaçãoalveolar RQ 0,8/vapor 47 mm Hg; gradiente Mellemgaard 1966 2,5+0,21 idade; aproximaçãoidade/4+4",
-    "implementationVersion": "gradiente-alveolo-arterial@native-2026-10-03+d85cee034314",
+    "implementationVersion": "gradiente-alveolo-arterial@native-2026-10-05+ded237306f02",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/5963295/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -320,7 +320,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94"
+      "implementationHash": "ded237306f021a7f336078dc1e4c73ac3afe5ffd6fc68cbdab819c988d23a945",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "gradiente-alveolo-arterial@native-2026-10-03+d85cee034314",
+          "previousImplementationHash": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94",
+          "implementationHash": "ded237306f021a7f336078dc1e4c73ac3afe5ffd6fc68cbdab819c988d23a945",
+          "scientificBodySha256": "d180d1486b3f2e06862caef20e4a50042cb3d1c9d92f86018487dc38902d62cd",
+          "metadataContractHash": "be1e10616563e65f96952bd467a05b787e2cae1ed0ba76aa19d770ba91ee90de",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O cálculo usa pressão de vapor d’água de 47 mmHg a 37 °C e quociente respiratório fixo de 0,8; este é um pressuposto de estado estável e pode variar com a dieta. Informe FiO₂ em porcentagem, pressões em mmHg e pressão barométrica apropriada. A referência aproximada por idade não deve ser extrapolada automaticamente para FiO₂ elevada ou altitude. O gradiente ajuda a avaliar oxigenação, mas não determina sozinho a causa da hipoxemia. Os coeficientes da referência local por idade ainda exigem conferência no estudo completo citado.",
     "limitsEvidence": {
@@ -351,15 +379,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/gradiente-alveolo-arterial/calculator.js",
-    "bytes": 5351,
-    "sha256": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94"
+    "bytes": 5556,
+    "sha256": "ded237306f021a7f336078dc1e4c73ac3afe5ffd6fc68cbdab819c988d23a945"
   },
-  "sourceToolSha256": "cca973e9aafd8bb0cbc2873c2854d28f1d8ac52a8166897f435cb2fca67ea8dc",
+  "sourceToolSha256": "2c67eb7257ef51e7ed06809e66d68f6aafee3f08f0cb6febafc121aff06c43bd",
   "omittedFullReferenceBanks": [
     {
       "rows": 500,
       "sha256": "98b6d008c111fa25132c4cdb5db6f09c5e5d519a743b22dba5ec48526eb04113",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

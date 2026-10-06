@@ -91,3 +91,51 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Gradient normal pour l’âge : hypoxémie, s’il y en a, due à une hypoventilation ou à une faible pression inspirée en O₂
+
+| Détails du résultat | |
+| --- | --- |
+| PAO₂ (pression alvéolaire en O₂) | 100 mmHg |
+| Attendu pour l’âge (2,5 + 0,21 × âge) | jusqu’à 11 mmHg |
+| Règle pratique (âge ÷ 4 + 4) | 14 mmHg |
+
+
+### 2
+
+Gradient augmenté pour l’âge : suggère un trouble V/Q, un shunt ou une altération de la diffusion
+
+| Détails du résultat | |
+| --- | --- |
+| PAO₂ (pression alvéolaire en O₂) | 112 mmHg |
+| Attendu pour l’âge (2,5 + 0,21 × âge) | jusqu’à 15 mmHg |
+| Règle pratique (âge ÷ 4 + 4) | 19 mmHg |
+
+
+### 3
+
+Gradient normal pour l’âge : hypoxémie, s’il y en a, due à une hypoventilation ou à une faible pression inspirée en O₂
+
+| Détails du résultat | |
+| --- | --- |
+| PAO₂ (pression alvéolaire en O₂) | 62 mmHg |
+| Attendu pour l’âge (2,5 + 0,21 × âge) | jusqu’à 13 mmHg |
+| Règle pratique (âge ÷ 4 + 4) | 17 mmHg |
+
+
+### 4
+
+Gradient normal pour l’âge : hypoxémie, s’il y en a, due à une hypoventilation ou à une faible pression inspirée en O₂
+
+| Détails du résultat | |
+| --- | --- |
+| PAO₂ (pression alvéolaire en O₂) | 91 mmHg |
+| Attendu pour l’âge (2,5 + 0,21 × âge) | jusqu’à 9 mmHg |
+| Règle pratique (âge ÷ 4 + 4) | 12 mmHg |
+

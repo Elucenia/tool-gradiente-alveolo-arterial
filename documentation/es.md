@@ -91,3 +91,51 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Gradiente normal para la edad: hipoxemia, si la hay, por hipoventilación o baja presión inspirada de O₂
+
+| Detalles del resultado | |
+| --- | --- |
+| PAO₂ (presión alveolar de O₂) | 100 mmHg |
+| Esperado para la edad (2,5 + 0,21 × edad) | hasta 11 mmHg |
+| Regla práctica (edad ÷ 4 + 4) | 14 mmHg |
+
+
+### 2
+
+Gradiente aumentado para la edad: sugiere alteración V/Q, shunt o alteración de la difusión
+
+| Detalles del resultado | |
+| --- | --- |
+| PAO₂ (presión alveolar de O₂) | 112 mmHg |
+| Esperado para la edad (2,5 + 0,21 × edad) | hasta 15 mmHg |
+| Regla práctica (edad ÷ 4 + 4) | 19 mmHg |
+
+
+### 3
+
+Gradiente normal para la edad: hipoxemia, si la hay, por hipoventilación o baja presión inspirada de O₂
+
+| Detalles del resultado | |
+| --- | --- |
+| PAO₂ (presión alveolar de O₂) | 62 mmHg |
+| Esperado para la edad (2,5 + 0,21 × edad) | hasta 13 mmHg |
+| Regla práctica (edad ÷ 4 + 4) | 17 mmHg |
+
+
+### 4
+
+Gradiente normal para la edad: hipoxemia, si la hay, por hipoventilación o baja presión inspirada de O₂
+
+| Detalles del resultado | |
+| --- | --- |
+| PAO₂ (presión alveolar de O₂) | 91 mmHg |
+| Esperado para la edad (2,5 + 0,21 × edad) | hasta 9 mmHg |
+| Regla práctica (edad ÷ 4 + 4) | 12 mmHg |
+

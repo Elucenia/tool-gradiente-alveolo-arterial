@@ -1,6 +1,6 @@
 {
   "id": "gradiente-alveolo-arterial",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5351,
-      "sha256": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94"
+      "bytes": 5556,
+      "sha256": "ded237306f021a7f336078dc1e4c73ac3afe5ffd6fc68cbdab819c988d23a945"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1117,
-      "sha256": "873173aba2dbe45cc1b21cd339f8fd0d1e28989fd94b61a34b961a56f198fe47"
+      "bytes": 1386,
+      "sha256": "f8c2299f71be20ab34ff673264fc38176149bcd1e0f2c39bfd6de4c2b47c7751"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4657,
-      "sha256": "37b2d8d3a66bd9803ea7fa322c5c17afeff87328603db137c437f833f439be7c"
+      "bytes": 6514,
+      "sha256": "623a02d4921572739a58860c93dd890f0dbb4e880680eb2eec47e9720ddc8d77"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3979,
-      "sha256": "b5c87daaa20be457fae25592b6b7fc22cc4483ded43962ab0a98059aa3261265"
+      "bytes": 5485,
+      "sha256": "ffcd85ad03813661040da28912029eebc0f191569a18d0b5a0281f9a30133a53"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3501,
-      "sha256": "0011938f09f99ee5ce38e8781eae3e1bfcc545996908b76370cbe3a2cb683dbf"
+      "bytes": 4807,
+      "sha256": "7f521a702143b059cc27fbaae73534dc2b2445ba59f46debf916cd12a8730a2a"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3833,
-      "sha256": "af0573290d802a8d3dce72731869a3342b5c9ab50e12d676db053b48c625331e"
+      "bytes": 5266,
+      "sha256": "59d40a9533ae138d85419c4020ed832a5d01c7ff0a95252487d2efaccb5f899e"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 4042,
-      "sha256": "97e75a8b769827d1b8c13280738d31f1b7dbaf08f0fb634bc054a1b859e1063d"
+      "bytes": 5600,
+      "sha256": "e256462d7ddc29058057415a2274096e67b13e9170bdfcee4561defe916e8177"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6181,
-      "sha256": "5dc41a6345314777a5eef7999823fc5b9ae980a19088633fb3409b47609b8aa2"
+      "bytes": 8782,
+      "sha256": "055ccef548298fe3b69dea20b8fa996fc7b0d19a690962de7a295c1e4f6ca473"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3802,
-      "sha256": "ee2014a36be2950eb35cb6d243216ca85b5f9854ca9fb94afe78cc46d924231a"
+      "bytes": 5263,
+      "sha256": "89275c1d6b80ad84836b5195fe8821b9c332f7dff06798443eae368f1561adec"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3874,
-      "sha256": "be5d61d29b69fc62e7e96e5a3324efe9d0bb45edd6a585bb241c06d85fc513b5"
+      "bytes": 5361,
+      "sha256": "86e6a09b7adcb0e285dada227b78be25902051466c1d25ba335cb1a99e33ac3d"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3630,
-      "sha256": "9448866cdecbb7f616882f1776ad7c2b128b5480295db282c112cc65ea48fbab"
+      "bytes": 5054,
+      "sha256": "7733217a164a541589c848d254bfa3df16f8bfd649d3efdb5ca19eb56013697c"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 3088,
-      "sha256": "4ed7f3bb1f2895451c343dc173d9c99e901124c65e080f866bfca3ea94798530"
+      "bytes": 4354,
+      "sha256": "9b20ab0d02f686d2d16c2d28e1d02cc4e2756a9196551cdd90390a5f637728c2"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 81700,
+      "sha256": "5685e6fec44df11d80f08a82dad22c81676e002c52b17e5cf80ef6bf6bfb2f1e"
     },
     {
       "path": "engine/tool-code/gradiente-alveolo-arterial/calculator.js",
-      "bytes": 5351,
-      "sha256": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94"
+      "bytes": 5556,
+      "sha256": "ded237306f021a7f336078dc1e4c73ac3afe5ffd6fc68cbdab819c988d23a945"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2829,
       "sha256": "0083c316efa032419d30c2e37c138dba0ae2bf2ee61884b3270cdc349db40c73"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12332,
+      "sha256": "b500240f36fc2d97ecc9816dd1d1b782ffb05160c5fbf8adf3a69e16022377cb"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 48120,
-      "sha256": "b315e49f8865989838c92f93d7b9879689bebf76d743e27a2d223851547abf6f"
+      "bytes": 65937,
+      "sha256": "b374e6b25ec74938c133c70fff36d4bdb82023de526ad4a8f78c9668b00e158e"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 395,
-      "sha256": "2cea52b4ff9dc47a4f47bb1d7f8135ed94358e8054d5a1bb076d25d9c989d7af"
+      "bytes": 489,
+      "sha256": "910eb3447f5306d4c2d09e354384d9ba6998e61f6c99588544ab1519c511466e"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12332,
-      "sha256": "b500240f36fc2d97ecc9816dd1d1b782ffb05160c5fbf8adf3a69e16022377cb"
+      "bytes": 6426,
+      "sha256": "bb3397db6f60112a29dd7ff2db9b677b5907ad222d873f43095912c491477a77"
     },
     {
       "path": "README.md",
-      "bytes": 3243,
-      "sha256": "b58759f909ab56188297989dcea62436e41fdc1ede85322d6cbb843a2f0bd359"
+      "bytes": 3835,
+      "sha256": "fb3c3412f615242934062611ccfacdcd6051009dc7b9f7443ef0dd893bf7ffc7"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 8414,
+      "sha256": "091ffc600b94e89e941a5143eaf11e9b69a72a0b5616c56c2be287a8af1b3e94"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1949,
       "sha256": "3d0a8c0cb5b504316c269258b1d98ea849696cd9b13294bef68ef4ef5ef20f65"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 14894,
-      "sha256": "fdc7e2e7175ecff4524e23a0c571edd3da75be27b85427cbd5ad9fd4ae306aa0"
+      "bytes": 16419,
+      "sha256": "6100d6297cfea7c4fa577878afd05bf709007cd5a2fdc1de0877777a97f569a0"
     }
   ]
 }

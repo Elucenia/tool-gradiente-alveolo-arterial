@@ -91,3 +91,51 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Normal gradient for age: hypoxemia, if present, due to hypoventilation or low inspired O₂ pressure
+
+| Result details | |
+| --- | --- |
+| PAO₂ (alveolar O₂ pressure) | 100 mmHg |
+| Expected for age (2,5 + 0,21 × age) | up to 11 mmHg |
+| Rule of thumb (age ÷ 4 + 4) | 14 mmHg |
+
+
+### 2
+
+Gradient increased for age: suggests V/Q mismatch, shunt, or diffusion abnormality
+
+| Result details | |
+| --- | --- |
+| PAO₂ (alveolar O₂ pressure) | 112 mmHg |
+| Expected for age (2,5 + 0,21 × age) | up to 15 mmHg |
+| Rule of thumb (age ÷ 4 + 4) | 19 mmHg |
+
+
+### 3
+
+Normal gradient for age: hypoxemia, if present, due to hypoventilation or low inspired O₂ pressure
+
+| Result details | |
+| --- | --- |
+| PAO₂ (alveolar O₂ pressure) | 62 mmHg |
+| Expected for age (2,5 + 0,21 × age) | up to 13 mmHg |
+| Rule of thumb (age ÷ 4 + 4) | 17 mmHg |
+
+
+### 4
+
+Normal gradient for age: hypoxemia, if present, due to hypoventilation or low inspired O₂ pressure
+
+| Result details | |
+| --- | --- |
+| PAO₂ (alveolar O₂ pressure) | 91 mmHg |
+| Expected for age (2,5 + 0,21 × age) | up to 9 mmHg |
+| Rule of thumb (age ÷ 4 + 4) | 12 mmHg |
+

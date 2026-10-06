@@ -1,0 +1,2431 @@
+{
+  "id": "gradiente-alveolo-arterial",
+  "implementationVersion": "gradiente-alveolo-arterial@native-2026-10-05+ded237306f02",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pressão alveolar de O₂)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "100 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Esperado para a idade (2,5 + 0,21 × idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "até 11 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regra prática (idade ÷ 4 + 4)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "14 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente normal para a idade: hipoxemia, se houver, por hipoventilação ou baixa pressão inspirada de O₂",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pressão alveolar de O₂)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "112 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Esperado para a idade (2,5 + 0,21 × idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "até 15 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regra prática (idade ÷ 4 + 4)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "19 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente aumentado para a idade: sugere distúrbio V/Q, shunt ou alteração da difusão",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pressão alveolar de O₂)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "62 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Esperado para a idade (2,5 + 0,21 × idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "até 13 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regra prática (idade ÷ 4 + 4)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "17 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente normal para a idade: hipoxemia, se houver, por hipoventilação ou baixa pressão inspirada de O₂",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pressão alveolar de O₂)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "91 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Esperado para a idade (2,5 + 0,21 × idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "até 9 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regra prática (idade ÷ 4 + 4)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "12 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente normal para a idade: hipoxemia, se houver, por hipoventilação ou baixa pressão inspirada de O₂",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (alveolar O₂ pressure)",
+                "locale": "en",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "100 mmHg",
+                "locale": "en",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Expected for age (2,5 + 0,21 × age)",
+                "locale": "en",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "up to 11 mmHg",
+                "locale": "en",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Rule of thumb (age ÷ 4 + 4)",
+                "locale": "en",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "14 mmHg",
+                "locale": "en",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normal gradient for age: hypoxemia, if present, due to hypoventilation or low inspired O₂ pressure",
+            "locale": "en",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (alveolar O₂ pressure)",
+                "locale": "en",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "112 mmHg",
+                "locale": "en",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  112
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Expected for age (2,5 + 0,21 × age)",
+                "locale": "en",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "up to 15 mmHg",
+                "locale": "en",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Rule of thumb (age ÷ 4 + 4)",
+                "locale": "en",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "19 mmHg",
+                "locale": "en",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradient increased for age: suggests V/Q mismatch, shunt, or diffusion abnormality",
+            "locale": "en",
+            "template": "documented-authored-048fe897342933154a33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (alveolar O₂ pressure)",
+                "locale": "en",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "62 mmHg",
+                "locale": "en",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  62
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Expected for age (2,5 + 0,21 × age)",
+                "locale": "en",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "up to 13 mmHg",
+                "locale": "en",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Rule of thumb (age ÷ 4 + 4)",
+                "locale": "en",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "17 mmHg",
+                "locale": "en",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normal gradient for age: hypoxemia, if present, due to hypoventilation or low inspired O₂ pressure",
+            "locale": "en",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (alveolar O₂ pressure)",
+                "locale": "en",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "91 mmHg",
+                "locale": "en",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  91
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Expected for age (2,5 + 0,21 × age)",
+                "locale": "en",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "up to 9 mmHg",
+                "locale": "en",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Rule of thumb (age ÷ 4 + 4)",
+                "locale": "en",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "12 mmHg",
+                "locale": "en",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normal gradient for age: hypoxemia, if present, due to hypoventilation or low inspired O₂ pressure",
+            "locale": "en",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (presión alveolar de O₂)",
+                "locale": "es",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "100 mmHg",
+                "locale": "es",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Esperado para la edad (2,5 + 0,21 × edad)",
+                "locale": "es",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "hasta 11 mmHg",
+                "locale": "es",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regla práctica (edad ÷ 4 + 4)",
+                "locale": "es",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "14 mmHg",
+                "locale": "es",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente normal para la edad: hipoxemia, si la hay, por hipoventilación o baja presión inspirada de O₂",
+            "locale": "es",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (presión alveolar de O₂)",
+                "locale": "es",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "112 mmHg",
+                "locale": "es",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  112
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Esperado para la edad (2,5 + 0,21 × edad)",
+                "locale": "es",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "hasta 15 mmHg",
+                "locale": "es",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regla práctica (edad ÷ 4 + 4)",
+                "locale": "es",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "19 mmHg",
+                "locale": "es",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente aumentado para la edad: sugiere alteración V/Q, shunt o alteración de la difusión",
+            "locale": "es",
+            "template": "documented-authored-048fe897342933154a33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (presión alveolar de O₂)",
+                "locale": "es",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "62 mmHg",
+                "locale": "es",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  62
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Esperado para la edad (2,5 + 0,21 × edad)",
+                "locale": "es",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "hasta 13 mmHg",
+                "locale": "es",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regla práctica (edad ÷ 4 + 4)",
+                "locale": "es",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "17 mmHg",
+                "locale": "es",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente normal para la edad: hipoxemia, si la hay, por hipoventilación o baja presión inspirada de O₂",
+            "locale": "es",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (presión alveolar de O₂)",
+                "locale": "es",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "91 mmHg",
+                "locale": "es",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  91
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Esperado para la edad (2,5 + 0,21 × edad)",
+                "locale": "es",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "hasta 9 mmHg",
+                "locale": "es",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regla práctica (edad ÷ 4 + 4)",
+                "locale": "es",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "12 mmHg",
+                "locale": "es",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente normal para la edad: hipoxemia, si la hay, por hipoventilación o baja presión inspirada de O₂",
+            "locale": "es",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pression alvéolaire en O₂)",
+                "locale": "fr",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "100 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Attendu pour l’âge (2,5 + 0,21 × âge)",
+                "locale": "fr",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "jusqu’à 11 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Règle pratique (âge ÷ 4 + 4)",
+                "locale": "fr",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "14 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradient normal pour l’âge : hypoxémie, s’il y en a, due à une hypoventilation ou à une faible pression inspirée en O₂",
+            "locale": "fr",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pression alvéolaire en O₂)",
+                "locale": "fr",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "112 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  112
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Attendu pour l’âge (2,5 + 0,21 × âge)",
+                "locale": "fr",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "jusqu’à 15 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Règle pratique (âge ÷ 4 + 4)",
+                "locale": "fr",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "19 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradient augmenté pour l’âge : suggère un trouble V/Q, un shunt ou une altération de la diffusion",
+            "locale": "fr",
+            "template": "documented-authored-048fe897342933154a33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pression alvéolaire en O₂)",
+                "locale": "fr",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "62 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  62
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Attendu pour l’âge (2,5 + 0,21 × âge)",
+                "locale": "fr",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "jusqu’à 13 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Règle pratique (âge ÷ 4 + 4)",
+                "locale": "fr",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "17 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradient normal pour l’âge : hypoxémie, s’il y en a, due à une hypoventilation ou à une faible pression inspirée en O₂",
+            "locale": "fr",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pression alvéolaire en O₂)",
+                "locale": "fr",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "91 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  91
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Attendu pour l’âge (2,5 + 0,21 × âge)",
+                "locale": "fr",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "jusqu’à 9 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Règle pratique (âge ÷ 4 + 4)",
+                "locale": "fr",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "12 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradient normal pour l’âge : hypoxémie, s’il y en a, due à une hypoventilation ou à une faible pression inspirée en O₂",
+            "locale": "fr",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (alveolärer O₂-Partialdruck)",
+                "locale": "de",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "100 mmHg",
+                "locale": "de",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Erwartet für das Alter (2,5 + 0,21 × Alter)",
+                "locale": "de",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "bis zu 11 mmHg",
+                "locale": "de",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Faustregel (Alter ÷ 4 + 4)",
+                "locale": "de",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "14 mmHg",
+                "locale": "de",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normaler altersbezogener Gradient: Hypoxämie, falls vorhanden, durch Hypoventilation oder niedrigen inspiratorischen O₂-Partialdruck",
+            "locale": "de",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (alveolärer O₂-Partialdruck)",
+                "locale": "de",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "112 mmHg",
+                "locale": "de",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  112
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Erwartet für das Alter (2,5 + 0,21 × Alter)",
+                "locale": "de",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "bis zu 15 mmHg",
+                "locale": "de",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Faustregel (Alter ÷ 4 + 4)",
+                "locale": "de",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "19 mmHg",
+                "locale": "de",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Für das Alter erhöhter Gradient: spricht für V/Q-Störung, Shunt oder Diffusionsstörung",
+            "locale": "de",
+            "template": "documented-authored-048fe897342933154a33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (alveolärer O₂-Partialdruck)",
+                "locale": "de",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "62 mmHg",
+                "locale": "de",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  62
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Erwartet für das Alter (2,5 + 0,21 × Alter)",
+                "locale": "de",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "bis zu 13 mmHg",
+                "locale": "de",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Faustregel (Alter ÷ 4 + 4)",
+                "locale": "de",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "17 mmHg",
+                "locale": "de",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normaler altersbezogener Gradient: Hypoxämie, falls vorhanden, durch Hypoventilation oder niedrigen inspiratorischen O₂-Partialdruck",
+            "locale": "de",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (alveolärer O₂-Partialdruck)",
+                "locale": "de",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "91 mmHg",
+                "locale": "de",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  91
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Erwartet für das Alter (2,5 + 0,21 × Alter)",
+                "locale": "de",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "bis zu 9 mmHg",
+                "locale": "de",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Faustregel (Alter ÷ 4 + 4)",
+                "locale": "de",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "12 mmHg",
+                "locale": "de",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normaler altersbezogener Gradient: Hypoxämie, falls vorhanden, durch Hypoventilation oder niedrigen inspiratorischen O₂-Partialdruck",
+            "locale": "de",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pressione alveolare di O₂)",
+                "locale": "it",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "100 mmHg",
+                "locale": "it",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Atteso per l’età (2,5 + 0,21 × età)",
+                "locale": "it",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "fino a 11 mmHg",
+                "locale": "it",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regola pratica (età ÷ 4 + 4)",
+                "locale": "it",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "14 mmHg",
+                "locale": "it",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente normale per l’età: ipossiemia, se presente, dovuta a ipoventilazione o bassa pressione inspirata di O₂",
+            "locale": "it",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pressione alveolare di O₂)",
+                "locale": "it",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "112 mmHg",
+                "locale": "it",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  112
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Atteso per l’età (2,5 + 0,21 × età)",
+                "locale": "it",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "fino a 15 mmHg",
+                "locale": "it",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regola pratica (età ÷ 4 + 4)",
+                "locale": "it",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "19 mmHg",
+                "locale": "it",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente aumentato per l’età: suggerisce alterazione V/Q, shunt o alterazione della diffusione",
+            "locale": "it",
+            "template": "documented-authored-048fe897342933154a33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pressione alveolare di O₂)",
+                "locale": "it",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "62 mmHg",
+                "locale": "it",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  62
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Atteso per l’età (2,5 + 0,21 × età)",
+                "locale": "it",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "fino a 13 mmHg",
+                "locale": "it",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regola pratica (età ÷ 4 + 4)",
+                "locale": "it",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "17 mmHg",
+                "locale": "it",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente normale per l’età: ipossiemia, se presente, dovuta a ipoventilazione o bassa pressione inspirata di O₂",
+            "locale": "it",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (pressione alveolare di O₂)",
+                "locale": "it",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "91 mmHg",
+                "locale": "it",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  91
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Atteso per l’età (2,5 + 0,21 × età)",
+                "locale": "it",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "fino a 9 mmHg",
+                "locale": "it",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Regola pratica (età ÷ 4 + 4)",
+                "locale": "it",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "12 mmHg",
+                "locale": "it",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gradiente normale per l’età: ipossiemia, se presente, dovuta a ipoventilazione o bassa pressione inspirata di O₂",
+            "locale": "it",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (الضغط السنخي لـ O₂)",
+                "locale": "ar",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "١٠٠ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المتوقع حسب العمر (2,5 + 0,21 × العمر)",
+                "locale": "ar",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "حتى ١١ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "قاعدة عملية (العمر ÷ 4 + 4)",
+                "locale": "ar",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "١٤ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التدرج الطبيعي للعمر: نقص أكسجة، إن وُجد، بسبب نقص التهوية أو انخفاض ضغط O₂ المستنشق",
+            "locale": "ar",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (الضغط السنخي لـ O₂)",
+                "locale": "ar",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "١١٢ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  112
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المتوقع حسب العمر (2,5 + 0,21 × العمر)",
+                "locale": "ar",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "حتى ١٥ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "قاعدة عملية (العمر ÷ 4 + 4)",
+                "locale": "ar",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "١٩ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التدرج مرتفع بالنسبة للعمر: يشير إلى اختلال V/Q أو تحويلة أو اضطراب في الانتشار",
+            "locale": "ar",
+            "template": "documented-authored-048fe897342933154a33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (الضغط السنخي لـ O₂)",
+                "locale": "ar",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "٦٢ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  62
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المتوقع حسب العمر (2,5 + 0,21 × العمر)",
+                "locale": "ar",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "حتى ١٣ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "قاعدة عملية (العمر ÷ 4 + 4)",
+                "locale": "ar",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "١٧ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التدرج الطبيعي للعمر: نقص أكسجة، إن وُجد، بسبب نقص التهوية أو انخفاض ضغط O₂ المستنشق",
+            "locale": "ar",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (الضغط السنخي لـ O₂)",
+                "locale": "ar",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "٩١ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  91
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المتوقع حسب العمر (2,5 + 0,21 × العمر)",
+                "locale": "ar",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "حتى ٩ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "قاعدة عملية (العمر ÷ 4 + 4)",
+                "locale": "ar",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "١٢ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التدرج الطبيعي للعمر: نقص أكسجة، إن وُجد، بسبب نقص التهوية أو انخفاض ضغط O₂ المستنشق",
+            "locale": "ar",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂（肺泡 O₂ 压力）",
+                "locale": "zh",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "100 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "按年龄预期（2,5 + 0,21 × 年龄）",
+                "locale": "zh",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "最高 11 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "经验规则（年龄 ÷ 4 + 4）",
+                "locale": "zh",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "14 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "年龄相应的正常梯度：如有低氧血症，则由于低通气或吸入 O₂ 压力低",
+            "locale": "zh",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂（肺泡 O₂ 压力）",
+                "locale": "zh",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "112 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  112
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "按年龄预期（2,5 + 0,21 × 年龄）",
+                "locale": "zh",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "最高 15 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "经验规则（年龄 ÷ 4 + 4）",
+                "locale": "zh",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "19 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "相对于年龄升高的梯度：提示 V/Q 失调、分流或弥散障碍",
+            "locale": "zh",
+            "template": "documented-authored-048fe897342933154a33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂（肺泡 O₂ 压力）",
+                "locale": "zh",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "62 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  62
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "按年龄预期（2,5 + 0,21 × 年龄）",
+                "locale": "zh",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "最高 13 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "经验规则（年龄 ÷ 4 + 4）",
+                "locale": "zh",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "17 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "年龄相应的正常梯度：如有低氧血症，则由于低通气或吸入 O₂ 压力低",
+            "locale": "zh",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂（肺泡 O₂ 压力）",
+                "locale": "zh",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "91 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  91
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "按年龄预期（2,5 + 0,21 × 年龄）",
+                "locale": "zh",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "最高 9 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "经验规则（年龄 ÷ 4 + 4）",
+                "locale": "zh",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "12 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "年龄相应的正常梯度：如有低氧血症，则由于低通气或吸入 O₂ 压力低",
+            "locale": "zh",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂（肺胞 O₂ 圧）",
+                "locale": "ja",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "100 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年齢で予測される値（2,5 + 0,21 × 年齢）",
+                "locale": "ja",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "11 mmHg まで",
+                "locale": "ja",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "経験則（年齢 ÷ 4 + 4）",
+                "locale": "ja",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "14 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "年齢に対して正常な勾配：低酸素血症がある場合は、低換気または吸入 O₂ 分圧低下による",
+            "locale": "ja",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂（肺胞 O₂ 圧）",
+                "locale": "ja",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "112 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  112
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年齢で予測される値（2,5 + 0,21 × 年齢）",
+                "locale": "ja",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "15 mmHg まで",
+                "locale": "ja",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "経験則（年齢 ÷ 4 + 4）",
+                "locale": "ja",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "19 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "年齢に対して上昇した勾配：V/Q 不均衡、シャント、または拡散障害を示唆",
+            "locale": "ja",
+            "template": "documented-authored-048fe897342933154a33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂（肺胞 O₂ 圧）",
+                "locale": "ja",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "62 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  62
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年齢で予測される値（2,5 + 0,21 × 年齢）",
+                "locale": "ja",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "13 mmHg まで",
+                "locale": "ja",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "経験則（年齢 ÷ 4 + 4）",
+                "locale": "ja",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "17 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "年齢に対して正常な勾配：低酸素血症がある場合は、低換気または吸入 O₂ 分圧低下による",
+            "locale": "ja",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂（肺胞 O₂ 圧）",
+                "locale": "ja",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "91 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  91
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年齢で予測される値（2,5 + 0,21 × 年齢）",
+                "locale": "ja",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "9 mmHg まで",
+                "locale": "ja",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "経験則（年齢 ÷ 4 + 4）",
+                "locale": "ja",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "12 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "年齢に対して正常な勾配：低酸素血症がある場合は、低換気または吸入 O₂ 分圧低下による",
+            "locale": "ja",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (वायुकोशीय O₂ दाब)",
+                "locale": "hi",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "100 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  100
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयु के लिए अपेक्षित (2,5 + 0,21 × आयु)",
+                "locale": "hi",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "11 mmHg तक",
+                "locale": "hi",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "व्यावहारिक नियम (आयु ÷ 4 + 4)",
+                "locale": "hi",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "14 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "आयु के लिए सामान्य ग्रेडिएंट: यदि हाइपोक्सिमिया हो, तो हाइपोवेंटिलेशन या कम प्रेरित O₂ दाब के कारण",
+            "locale": "hi",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (वायुकोशीय O₂ दाब)",
+                "locale": "hi",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "112 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  112
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयु के लिए अपेक्षित (2,5 + 0,21 × आयु)",
+                "locale": "hi",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "15 mmHg तक",
+                "locale": "hi",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "व्यावहारिक नियम (आयु ÷ 4 + 4)",
+                "locale": "hi",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "19 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "आयु के लिए बढ़ा हुआ ग्रेडिएंट: V/Q असंतुलन, शंट, या विसरण विकार का सुझाव देता है",
+            "locale": "hi",
+            "template": "documented-authored-048fe897342933154a33"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (वायुकोशीय O₂ दाब)",
+                "locale": "hi",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "62 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  62
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयु के लिए अपेक्षित (2,5 + 0,21 × आयु)",
+                "locale": "hi",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "13 mmHg तक",
+                "locale": "hi",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "व्यावहारिक नियम (आयु ÷ 4 + 4)",
+                "locale": "hi",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "17 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "आयु के लिए सामान्य ग्रेडिएंट: यदि हाइपोक्सिमिया हो, तो हाइपोवेंटिलेशन या कम प्रेरित O₂ दाब के कारण",
+            "locale": "hi",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "PAO₂ (वायुकोशीय O₂ दाब)",
+                "locale": "hi",
+                "template": "documented-authored-b1aeaa1f0bc42e6251c5"
+              },
+              "value": {
+                "text": "91 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  91
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयु के लिए अपेक्षित (2,5 + 0,21 × आयु)",
+                "locale": "hi",
+                "template": "documented-authored-8fe764fa1fb9f70f8a36"
+              },
+              "value": {
+                "text": "9 mmHg तक",
+                "locale": "hi",
+                "template": "documented-authored-8fc90b29b5aa1fedf3de",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "व्यावहारिक नियम (आयु ÷ 4 + 4)",
+                "locale": "hi",
+                "template": "documented-authored-c1aca1a3e1da531cbb42"
+              },
+              "value": {
+                "text": "12 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-ddc8f4711460e2ce8689",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "आयु के लिए सामान्य ग्रेडिएंट: यदि हाइपोक्सिमिया हो, तो हाइपोवेंटिलेशन या कम प्रेरित O₂ दाब के कारण",
+            "locale": "hi",
+            "template": "documented-authored-72d1ab33951485f00250"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

@@ -91,3 +91,51 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Gradiente normale per l’età: ipossiemia, se presente, dovuta a ipoventilazione o bassa pressione inspirata di O₂
+
+| Dettagli del risultato | |
+| --- | --- |
+| PAO₂ (pressione alveolare di O₂) | 100 mmHg |
+| Atteso per l’età (2,5 + 0,21 × età) | fino a 11 mmHg |
+| Regola pratica (età ÷ 4 + 4) | 14 mmHg |
+
+
+### 2
+
+Gradiente aumentato per l’età: suggerisce alterazione V/Q, shunt o alterazione della diffusione
+
+| Dettagli del risultato | |
+| --- | --- |
+| PAO₂ (pressione alveolare di O₂) | 112 mmHg |
+| Atteso per l’età (2,5 + 0,21 × età) | fino a 15 mmHg |
+| Regola pratica (età ÷ 4 + 4) | 19 mmHg |
+
+
+### 3
+
+Gradiente normale per l’età: ipossiemia, se presente, dovuta a ipoventilazione o bassa pressione inspirata di O₂
+
+| Dettagli del risultato | |
+| --- | --- |
+| PAO₂ (pressione alveolare di O₂) | 62 mmHg |
+| Atteso per l’età (2,5 + 0,21 × età) | fino a 13 mmHg |
+| Regola pratica (età ÷ 4 + 4) | 17 mmHg |
+
+
+### 4
+
+Gradiente normale per l’età: ipossiemia, se presente, dovuta a ipoventilazione o bassa pressione inspirata di O₂
+
+| Dettagli del risultato | |
+| --- | --- |
+| PAO₂ (pressione alveolare di O₂) | 91 mmHg |
+| Atteso per l’età (2,5 + 0,21 × età) | fino a 9 mmHg |
+| Regola pratica (età ÷ 4 + 4) | 12 mmHg |
+

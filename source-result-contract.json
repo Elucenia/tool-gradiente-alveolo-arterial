@@ -1,0 +1,309 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "gradiente-alveolo-arterial",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "54494566c69567612a01a436b37daa6365125b1a",
+    "oldEngineSha256": "d85cee034314ebb8e976aa306d12096dd4f06d808b9c56ce022e8d6f164f8f94",
+    "currentEngineSha256": "ded237306f021a7f336078dc1e4c73ac3afe5ffd6fc68cbdab819c988d23a945"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Ar ambiente, PaO₂ 90, PaCO₂ 40, 40 anos: 9,7 (normal)",
+      "input": {
+        "fio2": 21,
+        "pao2": 90,
+        "paco2": 40,
+        "idade": 40
+      },
+      "publicOutput": {
+        "id": "gradiente-alveolo-arterial",
+        "main": [
+          "10",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "raw": {
+          "pAO2": 99.72999999999999,
+          "grad": 9.72999999999999,
+          "esperado": 10.9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pAO2": 99.73,
+          "grad": 9.73,
+          "esperado": 10.9
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "10",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "level": "low",
+        "verdict": "Gradiente normal para a idade: hipoxemia, se houver, por hipoventilação ou baixa pressão inspirada de O₂",
+        "rows": [
+          [
+            "PAO₂ (pressão alveolar de O₂)",
+            "100 mmHg"
+          ],
+          [
+            "Esperado para a idade (2,5 + 0,21 × idade)",
+            "até 11 mmHg"
+          ],
+          [
+            "Regra prática (idade ÷ 4 + 4)",
+            "14 mmHg"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "pAO2": 99.72999999999999,
+          "grad": 9.72999999999999,
+          "esperado": 10.9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "TEP: PaO₂ 60, PaCO₂ 30, 60 anos: 52,2 (aumentado)",
+      "input": {
+        "fio2": 21,
+        "pao2": 60,
+        "paco2": 30,
+        "idade": 60
+      },
+      "publicOutput": {
+        "id": "gradiente-alveolo-arterial",
+        "main": [
+          "52",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "raw": {
+          "pAO2": 112.22999999999999,
+          "grad": 52.22999999999999,
+          "esperado": 15.1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "grad": 52.23
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "52",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "level": "high",
+        "verdict": "Gradiente aumentado para a idade: sugere distúrbio V/Q, shunt ou alteração da difusão",
+        "rows": [
+          [
+            "PAO₂ (pressão alveolar de O₂)",
+            "112 mmHg"
+          ],
+          [
+            "Esperado para a idade (2,5 + 0,21 × idade)",
+            "até 15 mmHg"
+          ],
+          [
+            "Regra prática (idade ÷ 4 + 4)",
+            "19 mmHg"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "pAO2": 112.22999999999999,
+          "grad": 52.22999999999999,
+          "esperado": 15.1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Hipoventilação: PaO₂ 55, PaCO₂ 70, 50 anos: 7,2 (normal)",
+      "input": {
+        "fio2": 21,
+        "pao2": 55,
+        "paco2": 70,
+        "idade": 50
+      },
+      "publicOutput": {
+        "id": "gradiente-alveolo-arterial",
+        "main": [
+          "7",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "raw": {
+          "pAO2": 62.22999999999999,
+          "grad": 7.22999999999999,
+          "esperado": 13
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pAO2": 62.23,
+          "grad": 7.23
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "level": "low",
+        "verdict": "Gradiente normal para a idade: hipoxemia, se houver, por hipoventilação ou baixa pressão inspirada de O₂",
+        "rows": [
+          [
+            "PAO₂ (pressão alveolar de O₂)",
+            "62 mmHg"
+          ],
+          [
+            "Esperado para a idade (2,5 + 0,21 × idade)",
+            "até 13 mmHg"
+          ],
+          [
+            "Regra prática (idade ÷ 4 + 4)",
+            "17 mmHg"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "pAO2": 62.22999999999999,
+          "grad": 7.22999999999999,
+          "esperado": 13
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Altitude (Patm 690): PaO₂ 85, PaCO₂ 35, 30 anos: 6,3",
+      "input": {
+        "fio2": 21,
+        "pao2": 85,
+        "paco2": 35,
+        "idade": 30,
+        "patm": 690
+      },
+      "publicOutput": {
+        "id": "gradiente-alveolo-arterial",
+        "main": [
+          "6",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "raw": {
+          "pAO2": 91.28,
+          "grad": 6.280000000000001,
+          "esperado": 8.8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pAO2": 91.28,
+          "grad": 6.28
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "6",
+          "mmHg"
+        ],
+        "label": "Gradiente alvéolo-arterial de O₂",
+        "level": "low",
+        "verdict": "Gradiente normal para a idade: hipoxemia, se houver, por hipoventilação ou baixa pressão inspirada de O₂",
+        "rows": [
+          [
+            "PAO₂ (pressão alveolar de O₂)",
+            "91 mmHg"
+          ],
+          [
+            "Esperado para a idade (2,5 + 0,21 × idade)",
+            "até 9 mmHg"
+          ],
+          [
+            "Regra prática (idade ÷ 4 + 4)",
+            "12 mmHg"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "pAO2": 91.28,
+          "grad": 6.280000000000001,
+          "esperado": 8.8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

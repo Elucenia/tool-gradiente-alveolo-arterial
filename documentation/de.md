@@ -91,3 +91,51 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Normaler altersbezogener Gradient: Hypoxämie, falls vorhanden, durch Hypoventilation oder niedrigen inspiratorischen O₂-Partialdruck
+
+| Ergebnisdetails | |
+| --- | --- |
+| PAO₂ (alveolärer O₂-Partialdruck) | 100 mmHg |
+| Erwartet für das Alter (2,5 + 0,21 × Alter) | bis zu 11 mmHg |
+| Faustregel (Alter ÷ 4 + 4) | 14 mmHg |
+
+
+### 2
+
+Für das Alter erhöhter Gradient: spricht für V/Q-Störung, Shunt oder Diffusionsstörung
+
+| Ergebnisdetails | |
+| --- | --- |
+| PAO₂ (alveolärer O₂-Partialdruck) | 112 mmHg |
+| Erwartet für das Alter (2,5 + 0,21 × Alter) | bis zu 15 mmHg |
+| Faustregel (Alter ÷ 4 + 4) | 19 mmHg |
+
+
+### 3
+
+Normaler altersbezogener Gradient: Hypoxämie, falls vorhanden, durch Hypoventilation oder niedrigen inspiratorischen O₂-Partialdruck
+
+| Ergebnisdetails | |
+| --- | --- |
+| PAO₂ (alveolärer O₂-Partialdruck) | 62 mmHg |
+| Erwartet für das Alter (2,5 + 0,21 × Alter) | bis zu 13 mmHg |
+| Faustregel (Alter ÷ 4 + 4) | 17 mmHg |
+
+
+### 4
+
+Normaler altersbezogener Gradient: Hypoxämie, falls vorhanden, durch Hypoventilation oder niedrigen inspiratorischen O₂-Partialdruck
+
+| Ergebnisdetails | |
+| --- | --- |
+| PAO₂ (alveolärer O₂-Partialdruck) | 91 mmHg |
+| Erwartet für das Alter (2,5 + 0,21 × Alter) | bis zu 9 mmHg |
+| Faustregel (Alter ÷ 4 + 4) | 12 mmHg |
+
